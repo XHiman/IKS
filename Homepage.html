@@ -9,25 +9,53 @@
 
 <style>
     body{
-        background-image: url(Images/background.jpg);
+        background-image: url(images/v2_3.png);
         background-size: 100vmax;
         background-repeat: repeat-y;
     }
     .navbar{
         display: flex;
-        background-color: aliceblue;
         margin-bottom: 5vh;
-        padding: 1em;
         list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 50px;
     }
     .navbar ul#menu li {
         display:inline;
         margin: 10px;
     }
+    .nav-links a {
+        color: #fff;
+    }
+
+    .logo {
+        margin-left: 2vw;
+        font-size: 50px;
+        font: poppins;
+        color: #fff;
+    }
+
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        
+    }
+    .menu li:hover {
+        background-color: #4c9e9e;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    .menu li {
+        padding: 5px 14px;
+    }
     .firstpage{
         background-color: rgba(255, 255, 255, 0.5);
         display: grid;
-        grid-template-columns: 50% 50%;       
+        grid-template-columns: 50% 50%;
+        margin-left: 5vw;
+        margin-right: 5vw;       
     }
     .left h1{
         color: rgba(255, 255, 255, 1);
@@ -42,7 +70,7 @@
         height: 500px;
     }
     .right{
-        height: 500px;
+        height: 800px;
         margin: 2vmax;
     }
     .elementa{        
@@ -62,6 +90,9 @@
         display: grid;
         grid-template-rows: 2;
         justify-content: center;
+        margin-left: 5vw;
+        margin-right: 5vw; 
+        padding-top: 2vw;
     }
 
     .secondpage p{
@@ -72,21 +103,28 @@
 
 <body>
     <div class="navbar">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <ul id="menu">
-            <li><a href="">Home</a></li>
-            <li>About Us</li>
+        <div class="logo">Vrutta</div>
+        
+        <ul id="menu" class="nav-links">
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Team</a></li>
+                <li><a href="/">About</a></li>
+                <img src="images/line.jpg" alt="element_line" height="55px" width="5px">
+                <li><a href="/">Login</a></li>
+                <li><a href="/">Sign Up</a></li>
+            </div>
         </ul>
 
     </div>
     <div class="firstpage">
         <div class="left">
-            <h1>Know your Vruttas <p>This is Vruttas</p></h1>
+            <h1>Know the Beauty<p>Of Indian Verses</p></h1>
         </div>
         <div class="right">
-            <!--p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio dicta cupiditate earum obcaecati magni sint dolore laborum vitae velit inventore, natus consequuntur mollitia assumenda consequatur rem incidunt tempora dolores?</p-->
+            
             <div class="elementa">
-                <img src="Images/element1.webp" alt="element1" class="rounded-edge" width="500" height="400">
+                <img src="images/v2_27.png" alt="element1" class="rounded-edge" width="500" height="700">
             </div>
         </div>
     </div>
