@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<style>
+    body{
+        background-image: url(Images/background.jpg);
+        background-size: 100vmax;
+        background-repeat: repeat-y;
+    }
+    .navbar{
+        display: flex;
+        background-color: aliceblue;
+        margin-bottom: 5vh;
+        padding: 1em;
+        list-style: none;
+    }
+    .navbar ul#menu li {
+        display:inline;
+        margin: 10px;
+    }
+    .firstpage{
+        background-color: rgba(255, 255, 255, 0.5);
+        display: grid;
+        grid-template-columns: 50% 50%;       
+    }
+    .left h1{
+        color: rgba(255, 255, 255, 1);
+    }
+    .left{
+        
+        margin: 2vmax;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+    .right{
+        height: 500px;
+        margin: 2vmax;
+    }
+    .elementa{        
+        justify-content: center;
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        height: inherit;
+    }
+
+    img.rounded-edge{
+        border-radius: 100px;
+    }
+    
+    .secondpage{
+        background-color: rgba(255, 255, 255, 0.5);
+        display: grid;
+        grid-template-rows: 2;
+        justify-content: center;
+    }
+
+    .secondpage p{
+        grid-row: 2;
+    }
+
+</style>
+
+<body>
+    <div class="navbar">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li>About Us</li>
+        </ul>
+
+    </div>
+    <div class="firstpage">
+        <div class="left">
+            <h1>Know your Vruttas <p>This is Vruttas</p></h1>
+        </div>
+        <div class="right">
+            <!--p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio dicta cupiditate earum obcaecati magni sint dolore laborum vitae velit inventore, natus consequuntur mollitia assumenda consequatur rem incidunt tempora dolores?</p-->
+            <div class="elementa">
+                <img src="Images/element1.webp" alt="element1" class="rounded-edge" width="500" height="400">
+            </div>
+        </div>
+    </div>
+    <div class="secondpage">
+        <h1> Vruttas </h1>
+        <p>Lorem ipsum dolor sit amet. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, a?</p>
+    </div>
+</body>
+</html>
