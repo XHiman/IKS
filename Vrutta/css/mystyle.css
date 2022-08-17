@@ -1,0 +1,90 @@
+body{
+    background-image: url(images/v2_3.png);
+    background-size: 100vmax;
+    background-repeat: repeat-y;
+}
+.navbar{
+    display: flex;
+    margin-bottom: 5vh;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.navbar ul#menu li {
+    display:inline;
+    margin: 10px;
+}
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    margin-left: 2vw;
+    font-size: 50px;
+    font: poppins;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    
+}
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+.firstpage{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 5vw;
+    margin-right: 5vw;       
+}
+.left h1{
+    color: rgba(255, 255, 255, 1);
+}
+.left{
+    
+    margin: 2vmax;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.right{
+    height: 800px;
+    margin: 2vmax;
+}
+.elementa{        
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    height: inherit;
+}
+
+img.rounded-edge{
+    border-radius: 100px;
+}
+
+.secondpage{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw; 
+    padding-top: 2vw;
+}
+
+.secondpage p{
+    grid-row: 2;
+}
