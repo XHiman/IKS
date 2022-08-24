@@ -1,5 +1,7 @@
 # IKS
-IKS Website
+#problems solved here
+https://stackoverflow.com/questions/39863458/html-wont-link-to-css-file-in-visual-studio-code
+# IKS Website
 ![image](https://user-images.githubusercontent.com/103849280/186514903-e7265644-c0bd-4b00-a0e7-25f67e2d00f8.png)
 
 ![image](https://user-images.githubusercontent.com/103849280/186514862-011b79f7-2942-4b00-b47a-cde3709afb7e.png)
