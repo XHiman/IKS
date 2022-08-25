@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="icon" type="image/x-icon" href="images/v2_22.png">
+</head>
+<style>
+    body{
+        background-image: url(images/v2_3.png);
+        background-size: 100vmax;
+        background-repeat: repeat-y;
+    }
+    .navbar{
+        display: flex;
+        margin-bottom: 1vh;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 50px;
+    }
+    .navbar ul#menu li {
+        display:inline;
+        margin: 10px;
+    }
+    .nav-links a {
+        color: #fff;
+    }
+
+    .logo {
+        width: 276px;
+        color: rgba(255,255,255,1);
+        font-family: Poppins;
+        font-weight: Bold;
+        font-size: 64px;
+        opacity: 1;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        
+    }
+    .menu li:hover {
+        background-color: #581212;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    .menu li {
+        padding: 5px 14px;
+        font-family: Poppins;
+        font-weight: Medium;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    /*Body here*/
+
+    .adminpage{
+        background-color: rgba(255, 255, 255, 0.1);
+        display: grid;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        justify-content: center; 
+        height: 900px;
+    }
+    .inputX{
+        display: grid;
+        grid-template-rows: 5;
+        text-align: center;
+    }
+    /*Input Fields*/
+    .input{
+        white-space: pre-line
+    }
+    .VN{
+        grid-column: 1;
+        border-radius: 50px;
+        padding: 20px;
+        width: 500px;
+        height: 20px;
+        margin: 10px;
+    }
+    .EPS{
+        grid-column: 1;
+        border-radius: 50px;
+        padding: 20px;
+        width: 500px;
+        height: 60px;
+        margin: 10px;
+        text-align: center;
+    }
+    input::placeholder {
+        /* Firefox, Chrome, Opera */
+        text-align: center;
+    }
+
+    textarea::placeholder {
+        /* Firefox, Chrome, Opera */
+        text-align: center;
+        font-family: Poppins;
+    }
+    textarea{
+        resize: none;
+    }
+    .buttoon{
+        grid-row: 4;
+        grid-column: 2;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 20px;
+        width: 200px;
+        height: 64px;
+        margin: 10px;
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <span class="logo">Vruttas</span>
+        
+        <ul id="menu" class="nav-links">
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Team</a></li>
+                <li><a href="/">About</a></li>
+                <img src="images/line.jpg" alt="element_line" height="85px" width="5px">
+                <li><a href="/">Login</a></li>
+                <li><a href="/">Sign Up</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="adminpage">
+        <form class="inputX">
+            <input class="VN" name="VruttaName" placeholder="Enter Vrutta name in English Here" autocomplete="off">
+            <input class="VN" name="VruttaNameSanskrit" placeholder="Enter Vrutta name in Sanskrit Here" autocomplete="off">
+            <textarea class="EPS" name="ExplainationSanskrit" placeholder="Explaination Poem in Sanskrit" autocomplete="off"></textarea>
+            <input class="VN" name="charnakshar" placeholder="Enter चरणाक्षर ">
+            <input class="VN" name="gana" placeholder="Enter गण ">
+            <input class="VN" name="yati" placeholder="Enter यति ">
+            <textarea class="EPS" name="ExampleX" placeholder="Give Example here" autocomplete="off"></textarea>
+            <button class="buttoon">Add Entry</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
